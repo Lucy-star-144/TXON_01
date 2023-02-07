@@ -1,0 +1,620 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr{
+  border: 1px solid black;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+     padding-top: 1%; 
+     padding-left: 3%; 
+     float: left;
+     color: black;
+     font-family: 'Brush Script MT', cursive;
+     font-weight: bolder;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .menu a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .menu a:hover {
+    background-color: #358bff;
+    color: white;
+  }
+  
+  /* till here everything ok */
+/* image background */
+
+/* Group Tours */
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-gap: 2rem; */
+}
+
+.container p{
+  background-color:white;
+  border: 2px solid white;
+  margin: 5px; 
+  text-align: center;
+  font-size: xx-large;
+  font-family: serif;
+  font-weight:800;
+}
+
+.container img{
+  background-color:white;
+  border: 2px solid black;
+  margin: 3px; 
+  padding: 2px;
+  width: 90%;
+  height: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+}
+
+.container img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* till here everything ok */
+
+/* Travel destination hover */
+.head h1{
+  text-align: center;
+  width: 1350px;
+  height: 80px;
+  animation: mymove 5s infinite;
+  font-family: serif;
+}
+
+@keyframes mymove {
+  50% {font: 50px bold;}
+}
+  .slider{
+  overflow: hidden;
+  width: 100%;
+  height:100vh;
+}
+
+.slider figure div{
+  float: left;
+  width: 20%;
+  /* 20 */
+}
+
+.slider figure img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.slider figure{
+  position: relative;
+  width:500%;
+  margin: 0;
+  animation: animate 20s infinite;
+}
+
+
+
+@keyframes animate{
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  12%{
+    left: -100%;
+  }
+  22%{
+    left: -100%;
+  }
+  24%{
+    left: -200%;
+  }
+  34%{
+    left: -200%;
+  }
+  36%{
+    left: -300%;
+  }
+  46%{
+    left: -300%;
+  }
+  48%{
+    left: -400%;
+  }
+  58%{
+    left: -400%;
+  }
+  60%{
+    left: -300%;
+  }
+  70%{
+    left: -300%;
+  }
+  72%{
+    left: -200%;
+  }
+  82%{
+    left: -200%;
+  }
+  84%{
+    left: -100%;
+  }
+  94%{
+    left: -100%;
+  }
+  96%{
+    left: 0;
+  }
+} 
+  
+
+ 
+/* practice 3 */
+
+/* What we provide */
+h1{
+  text-align: center;
+  margin-top: 5%;
+  font-family: serif;
+     font-weight: bolder;
+}
+
+.container2
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* grid-gap: 2rem; */
+  /* border: 2px solid black;
+  border-radius:2cm; */
+} 
+
+.container2 img{
+  background-color:white;
+  border: 2px solid white;
+  margin: 3px; 
+  padding: 2px;
+  width: 50%;
+  height: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 30%; */
+}
+
+.container2 p{
+  background-color:white;
+  border: 2px solid white;
+  margin: 5px; 
+  padding: 20px;
+  text-align: center;
+  font-size: larger;
+  font-family: sans-serif;
+  /* width: 50%; */
+  height: 80%;
+}
+
+
+.container2 span{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* Why choose us ??/ */
+
+h1{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.container3
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-gap: 2rem; */
+}
+
+.container3 img{
+  background-color :white;
+  border: 2px solid black;
+  margin: 3px; 
+  padding: 2px;
+  width: 50%;
+  height: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30%;
+}
+
+.container3 p{
+  background-color:white;
+  border: 2px solid white;
+  margin: 5px; 
+  padding: 20px;
+  text-align: justify;
+  font-size: larger;
+  font-family: sans-serif;
+  /* width: 50%; */
+  height: 80%;
+}
+
+
+.container3 span{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* everthing ok till here */
+
+/* Testimonials */
+
+.testimonial{
+  text-align: center;
+  color: black;
+  background: white;
+  width: 30%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1rem;
+}
+
+.container4{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 40px;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+
+}
+
+.container4 .card{
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+
+}
+
+.container4 .card-1{
+  border: 4px solid #358bff;
+
+}
+
+.container4 .card-2{
+  border: 4px solid #358bff;
+
+}
+.container4 .card-3{
+  border: 4px solid #358bff;
+
+}
+
+.container4 p{
+  font-family:sans-serif;
+  font-weight: bold;
+}
+
+/* Tours informaation through cards of india */
+/* container 5 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.swiper{
+    width: 950px;
+}
+.container5{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    position: relative;
+    /* background-image: linear-gradient(#fff, #7d2ae8); */
+
+}
+
+.container5 .section .card .image{
+    height: 300px;
+    width: 300px; 
+    /* border-radius: 50%; */
+     /* padding: 3px;  */
+     background: #7d2ae8;
+
+}
+.container5 .section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+.container5 .card{
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    /* absolute */
+    /* margin: 20px 0; */
+}
+.container5 .card::before{
+    content: "";
+    position: relative;
+    /* absolute */
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px 20px 0 0;
+}
+.container5 .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.container5 .card .media-icons{
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container5 .card .media-icons i{
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container5 .card .media-icons i:hover{
+    
+    opacity: 1;
+    
+}
+.container5 .card .name-profession{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.container5 .card .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+.container5 .card .name-profession .Profession{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.container5 .card .ratting-stars{
+    display: flex;
+    align-items: center;
+     color: #358bff; 
+    color: white;
+    margin-top: 8px;
+}
+
+.container5 .card .ratting-stars i{
+    margin: 0 2px;
+}
+.container5 .card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.container5 .card .button button{
+    background: #358bff;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+   
+}
+.container5 .card .button button:hover{
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    font-family: 'Poppins',sans-serif;
+}
+
+.container6{
+    display: flex;
+    min-height: 50vh;
+    background: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.container6 footer{
+    position:relative;
+    width: 100%;
+    background: #358bff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container6 footer .social_icon,
+.container6 footer .menuu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.container6 footer .social_icon li,
+.container6 footer .menuu li
+{
+    list-style: none;
+}
+
+.container6 footer .social_icon li a
+{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.container6 footer .social_icon li a:hover{
+      transform: translateY(-10px);
+}
+
+.container6 footer .menuu li a
+{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.container6 footer .menuu li a:hover{
+    opacity: 1;
+}
+
+.container6 footer p{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.container6 footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(wave.png);
+    background-size: 1000px 100px;
+}
+
+.container6 footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite ;
+}
+
+.container6 footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite ;
+}
+.container6 footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite ;
+}
+
+.container6 footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave 3s linear infinite ;
+} 
+
+@keyframes animateWave
+{
+    0%{
+        background-position-x: 1000px;
+        
+    }
+    100%{
+        background-position-x: 0px;
+        
+    }
+}
+
+ @keyframes animateWave_02
+{
+    0%{
+        background-position-x: 0px;
+        
+    }
+    100%{
+        background-position-x: 1000px;
+        
+    }
+}
+
+
